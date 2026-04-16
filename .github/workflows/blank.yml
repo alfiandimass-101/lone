@@ -16,7 +16,7 @@ jobs:
       - name: Extract coordi-main.zip
         run: |
           if [ -f "coordi-main.zip" ]; then
-            unzip -P "${{ secrets.ZIP_PASSWORD }}" coordi-main.zip
+            unzip -P "${{ secrets.ZIP_PASSWORD }}" lone-main.zip
           else
             echo "File coordi-main.zip tidak ditemukan!"
             exit 1
